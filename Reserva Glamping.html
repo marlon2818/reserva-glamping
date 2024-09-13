@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Glamping</title>
+    <link rel="stylesheet" href="reserva.css">
+</head>
+<body>
+    <header>
+        <center>
+            <img src="logo.png" alt="Logo de Glamping" id="logo">
+        </center>
+        
+    </header>
+</body>
+<body>
+    <div class="container">
+        
+        <h1>Reserva tu Glamping</h1>
+        <form id="reservation-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="numero">Numero de telefono:</label>
+            <input type="numero" id="number" name="numero de telefono" required>
+
+            <label for="check-in">Fecha de Entrada:</label>
+            <input type="date" id="check-in" name="check-in" required>
+            
+            <label for="check-out">Fecha de Salida:</label>
+            <input type="date" id="check-out" name="check-out" required>
+            
+            <button type="submit">Reservar</button>
+        </form>
+        <div id="confirmation" class="hidden">
+            <h2>¡Reserva Confirmada!</h2>
+            <p id="confirmation-message"></p>
+        </div>
+    </div>
+    <script src="reservaglamping.js"></script>
+</body>
+</html>
